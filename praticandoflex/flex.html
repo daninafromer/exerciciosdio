@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Flex</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+        }
+
+        .item{
+            background-color: darkcyan;
+            color: floralwhite;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .flex{
+            flex: 1;
+            /* grow = 1, shrink = 1, basis = 0 */
+        }
+
+        .flex2{
+            flex: 2;
+            /* grow = 1, shrink = 1, basis = 0 */
+        }
+    </style>
+</head>
+<body>
+    <p>flex 1</p>
+    <div class="flex-container">
+        <div class="item flex">1</div>
+        <div class="item flex">2</div>
+        <div class="item flex">3</div>
+        <div class="item flex">4</div>
+        <div class="item flex">5</div>
+    </div>
+    <p>flex 2</p>
+    <div class="flex-container">
+        <div class="item flex2">1</div>
+        <div class="item flex2">2</div>
+        <div class="item flex2">3</div>
+        <div class="item flex2">4</div>
+        <div class="item flex2">5</div>
+    </div>
+    <p>flex 1 ou 2</p>
+    <div class="flex-container">
+        <div class="item flex">1</div>
+        <div class="item flex2">2</div>
+        <div class="item flex">3</div>
+        <div class="item flex">4</div>
+        <div class="item flex2">5</div>
+    </div>
+</body>
+</html>
